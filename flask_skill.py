@@ -15,6 +15,15 @@ def GET_Link(file_name):
             print(e)
 
 
+<<<<<<< HEAD
+=======
+
+def CLOSE_DRIVER():
+    driver.quit()
+    exit()
+
+
+>>>>>>> 271a40be20d6499ac6c986bc55858abac44b1b85
 app=Flask(__name__)
 
 
@@ -40,8 +49,13 @@ def func01():
                 {
                     "simpleImage": 
                     {
+<<<<<<< HEAD
                         "imageUrl": GET_Link('link txt file name'),
                         "altText": "alt"
+=======
+                        "imageUrl": GET_Link('CCTV.txt'),
+                        "altText": "1번 채널 사진입니다."
+>>>>>>> 271a40be20d6499ac6c986bc55858abac44b1b85
                     }
                 }
             ]
@@ -67,8 +81,13 @@ def func02():
                 {
                     "simpleImage": 
                     {
+<<<<<<< HEAD
                         "imageUrl": GET_Link('link txt file name'),
                         "altText": "alt"
+=======
+                        "imageUrl": GET_Link('Hourly.txt'),
+                        "altText": "2번 채널 사진입니다."
+>>>>>>> 271a40be20d6499ac6c986bc55858abac44b1b85
                     }
                 }
             ]
@@ -94,8 +113,13 @@ def func03():
                 {
                     "simpleImage": 
                     {
+<<<<<<< HEAD
                         "imageUrl": GET_Link('link txt file name'),
                         "altText": "alt"
+=======
+                        "imageUrl": GET_Link('daily.txt'),
+                        "altText": "18시 30분 현장 사진입니다."
+>>>>>>> 271a40be20d6499ac6c986bc55858abac44b1b85
                     }
                 }
             ]
@@ -106,3 +130,9 @@ def func03():
 
 if __name__=="__main__":
     app.run(host='0.0.0.0',port='8080')
+<<<<<<< HEAD
+=======
+
+# 168.131.70.215
+#노트북 168.131.70.50
+>>>>>>> 271a40be20d6499ac6c986bc55858abac44b1b85
