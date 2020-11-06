@@ -80,7 +80,9 @@ Clone 한 폴더에 크롬드라이버를 넣어준다.
 
 #### 5.다음 순서대로 클래스함수를 실행시켜서 자동화 완료
 LOGIN() ->SET_CHANNEL() ->Check_File(‘시간범위’,’확장자’) ->SET_POST() ->STOR_SOURCE(‘~.txt) ->CLOSE_DRIVER()
+
 예시)
+
 ![그림1](https://user-images.githubusercontent.com/64114699/98396497-222b0400-20a1-11eb-9ddd-3afd712271f3.png)
 
 
