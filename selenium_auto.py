@@ -93,9 +93,9 @@ class selenium_auto:
 
         return post[Num].find_element(By.TAG_NAME,'img').get_attribute("src")
 
-    def STOR_SOURCE(self):
+    def STOR_SOURCE(self,txt_name):
         img_path=self.GET_SOURCE()
-        with open('img_link.txt',"w") as f:
+        with open(txt_name,"w") as f:
             f.write(img_path)
 
     def Check_File(self,time,Extension):
@@ -131,11 +131,12 @@ if __name__ == "__main__":
     File_Directory_Path=r"Upload date path"
     token='%Y%m%d-%H'#검사하고자 하는 시간의 범위를 작성
     Extension='.jpg'#파일의 확장자 결정
+    txt_name='img_link.txt'
 
     test=selenium_auto(USER_ID,USER_PASS,Channel_value,File_Directory_Path)
     test.LOGIN()
     test.SET_CHANNEL()
     test.Check_File(token,Extension)
     test.SET_POST()
-    test.STOR_SOURCE()
+    test.STOR_SOURCE(txt_name)
     test.CLOSE_DRIVER()
