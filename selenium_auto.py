@@ -95,7 +95,7 @@ class selenium_auto:
 
     def STOR_SOURCE(self):
         img_path=self.GET_SOURCE()
-        with open('test.txt',"w") as f:
+        with open('img_link.txt',"w") as f:
             f.write(img_path)
 
     def Check_File(self,time,Extension):
